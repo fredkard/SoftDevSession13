@@ -6,9 +6,17 @@ class NikValidate extends PersonLogic{
     }
 
     validate(){
-        var nik_string = new String(this.nik)
+      
         if (this.nik.length == 16) {
-            return 'NIK Length OK'
+
+            var bodOfBod = String(this.bod).substring(8,10)+String(this.bod).substring(5,7)+String(this.bod).substring(2,4)
+            var bodOfNik = this.nik.substring(6,12)
+            if (bodOfBod === bodOfNik){
+                return "NIK dan Tanggal Lahir Cocok"
+            } else {
+                return "NIK dan Tanggal lahir TIDAK Cocok"
+            }
+            
         }else{
             return 'NIK Lenght must be 16'
         }
