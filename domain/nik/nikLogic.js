@@ -18,7 +18,7 @@ class NikValidate extends PersonLogic{
             }
             
         }else{
-            return 'NIK Lenght must be 16'
+            return 'mas '+ this.nama + ' harus cek lagi NIK nya, karena tidak 16 digit'
         }
     }
 }
