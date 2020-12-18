@@ -9,9 +9,9 @@ class PersonGeneration extends AgeLogic{
         if (this.getAge() < 20 ){
             return "Gen Z"
         } else if (this.getAge() >= 20 && this.getAge() < 30){
-            return "Milenial Muda"
+            return "Millenial Muda"
         } else if (this.getAge() >= 30 && this.getAge() < 40 ){
-            return "Milenial Angkatan Awal"
+            return "Millenial Angkatan Awal"
         }else{
             return "Baby Boomer"
         }
