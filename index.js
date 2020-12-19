@@ -1,7 +1,7 @@
 var PersonLogic = require('./domain/person/personlogic');
 var personLogic = new PersonLogic('Fredy Kardian','0000092303839210','1983-03-23');
 console.log('Abang '+personLogic.nama)
-console.log('Lahir pada tanggal ' + personLogic.bod + ' yang merupakan sebuah '+personLogic.getWeekType())
+console.log('Lahir pada ' + personLogic.getWeekType() + ' di tanggal '+personLogic.bod);
 
 var AgeLogic = require('./domain/age/ageLogic');
 var ageLogic = new AgeLogic('Fredy Kardian','0000092303839210','1983-03-23');
